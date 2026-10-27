@@ -1,11 +1,9 @@
 # Atividade 1: Fundamentos e Características da Qualidade no LocalEats
 
-> Substituam os campos entre colchetes pelas respostas da equipe e removam as instruções antes da entrega.
-
 ## 1. Identificação
 
-**Turma:** Qualidade de software 2026 - 2 - manhã  
-**Equipe:**Daniel 
+**Turma:** Qualidade de Software 2026 – 2 – manhã  
+**Equipe:** Daniel  
 **Data:** 27/10/2026
 
 ### Integrantes
@@ -16,9 +14,7 @@
 
 **Elemento de Competência:** Compreender os fundamentos de qualidade de software e sua aplicação no desenvolvimento de sistemas.
 
-**Aplicação:** <https://local-eats-unisenac.vercel.app/>
-
----
+**Aplicação:** [LocalEats](https://local-eats-unisenac.vercel.app/)
 
 ## 2. Tarefa 1: Fundamentos da qualidade
 
@@ -30,36 +26,83 @@
 | Explícita | Permitir minimizar a janela do pedido sem perder os itens adicionados. | Cliente | A janela pode atrapalhar a visualização do cardápio, principalmente em telas menores. |
 | Implícita | Calcular corretamente o total conforme os preços e as quantidades dos produtos. | Cliente e restaurante | Pode haver cobrança incorreta, prejuízo e reclamações. |
 
-**Um sistema que implementa todas as funcionalidades explicitamente solicitadas pode, ainda assim, apresentar baixa qualidade? Justifiquem utilizando pelo menos uma necessidade implícita identificada pela equipe.**
+### 2.2 Questão sobre os fundamentos da qualidade
+
+**Um sistema que implementa todas as funcionalidades explicitamente solicitadas pode, ainda assim, apresentar baixa qualidade? Justifique utilizando pelo menos uma necessidade implícita identificada pela equipe.**
 
 Sim. Mesmo tendo todas as funcionalidades solicitadas, o sistema pode apresentar baixa qualidade se não atender às necessidades implícitas. Por exemplo, o cliente espera que o total do pedido seja calculado corretamente. Se o valor estiver errado, o sistema pode causar prejuízos e perder a confiança dos usuários.
 
----
+3. Tarefa 2: Exploração da aplicação
 
-## 3. Tarefa 2: Exploração da aplicação
+Integrante
 
-> Cada integrante deve explorar uma funcionalidade, realizando uma utilização esperada e uma utilização alternativa, inválida ou incompleta. Acrescentem ou removam linhas conforme o número de integrantes.
+Funcionalidade
 
-| Integrante | Funcionalidade | O que foi realizado | O que foi observado | Evidência |
-|---|---|---|---|---|
-| [Daniel] | [Montagem de pedido] | [uso esperado e uso alternativo] | [comportamento observado] | [ver evidência](evidencias/nome-do-arquivo.png) |
----
+O que foi realizado
 
-## 4. Tarefa 3: Requisitos e características de qualidade
+O que foi observado
 
-> Cada integrante deve formular um requisito de qualidade relacionado à mesma funcionalidade explorada na Tarefa 2. Acrescentem ou removam linhas conforme o número de integrantes.
+Evidência
 
-| Integrante | Requisito de qualidade | Característica ou subcaracterística | Justificativa | Como avaliar |
+Daniel
 
-| Daniel | A janela do pedido deve permitir minimizar e reabrir, mantendo os produtos, as quantidades e o total. | Usabilidade — operabilidade. | Permite continuar navegando pelo cardápio sem perder o pedido que já foi montado. | Adicionar dois produtos, minimizar a janela, navegar pelo cardápio e reabrir. Conferir se os produtos, as quantidades e o total continuam iguais.  cuidar o o valor do calculo dos produtos|
----
+Montagem do pedido.
 
-## 5. Uso de inteligência artificial
+Uso esperado: selecionar produtos para montar o pedido. Uso alternativo: tentar minimizar a janela do pedido para continuar olhando o cardápio.
 
-**Ferramenta utilizada:**  
-GPT
+A janela do pedido não apresentou uma opção para minimizar. Ela ocupou parte da tela e dificultou a visualização dos produtos mais abaixo, principalmente em telas menores. Para fechar a janela, foi necessário finalizar ou cancelar a montagem do pedido.
 
-**Como foi utilizada:**  
-auxilio em montar as respostas
+Ver evidência
 
-**Como as respostas foram verificadas:**  olhei testei e mandei para a IA me ajudar a formatar a resposta
+Daniel
+
+Cálculo do valor do pedido.
+
+Uso esperado: selecionar produtos e conferir se o total corresponde à soma dos preços multiplicados pelas respectivas quantidades, sem acréscimos.
+
+O total exibido na janela do pedido apresentou erro de cálculo, podendo gerar cobranças incorretas e prejudicar a confiança dos usuários na plataforma.
+
+Ver evidência
+
+4. Tarefa 3: Requisitos e características de qualidade
+
+Integrante
+
+Requisito de qualidade
+
+Característica ou subcaracterística
+
+Justificativa
+
+Como avaliar
+
+Daniel
+
+A janela do pedido deve permitir minimizar e reabrir, mantendo os produtos, as quantidades e o total.
+
+Usabilidade — operabilidade.
+
+Permite continuar navegando pelo cardápio sem perder o pedido que já foi montado.
+
+Adicionar dois produtos e anotar suas quantidades e o total. Minimizar a janela, navegar pelo cardápio e reabrir. Conferir se todos os dados continuam iguais. O total também deve corresponder à soma dos preços multiplicados pelas respectivas quantidades.
+
+Daniel
+
+O sistema deve calcular e atualizar corretamente o total do pedido ao adicionar, remover ou alterar a quantidade dos produtos.
+
+Adequação funcional — correção funcional.
+
+Evita cobranças incorretas e garante que o cliente saiba o valor dos produtos que está pedindo.
+
+Adicionar dois produtos, calcular manualmente os preços multiplicados pelas quantidades e comparar com o total exibido. Depois, alterar uma quantidade e remover um produto, repetindo a comparação. Os valores devem coincidir em todas as etapas.
+
+5. Uso de inteligência artificial
+
+Ferramenta utilizada:
+ChatGPT.
+
+Como foi utilizada:
+Para ajudar a organizar as observações, montar as respostas e corrigir a formatação da atividade.
+
+Como as respostas foram verificadas:
+Acessei o site, testei as funcionalidades e relatei à IA o que observei para que ela ajudasse a organizar a resposta.
